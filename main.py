@@ -23,6 +23,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
 app.include_router(routers.user_router.router, prefix="/user", tags=["user"])
 
 if __name__ == "__main__":
