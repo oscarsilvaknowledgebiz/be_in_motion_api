@@ -1,1 +1,2 @@
 from core.schemes import user_schemes
+from core.schemes import physiotherapeut_info_schemes

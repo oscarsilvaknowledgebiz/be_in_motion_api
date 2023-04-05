@@ -1,1 +1,2 @@
 from routers import user_router
+from routers import physiotherapeut_info_router
