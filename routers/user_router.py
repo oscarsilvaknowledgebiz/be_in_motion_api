@@ -41,3 +41,15 @@ async def service(id_user: str):
             )
 async def update_user(user: schemes.user_schemes.UserPut):
     return {"msg": "success", "data": {}}
+
+
+@router.post("by-id/{id_user}",
+             summary="Creates a new user by id_user",
+             description="Creates a new user by id_user",
+             response_description="Creates a new user",
+             response_model=schemes.user_schemes.UserCreateResponse,
+             operation_id="CreateUserByIdUser"
+             )
+async def create_user(user: schemes.user_schemes.UserPost):
+    return {"msg": "success", "data": {}}
+
