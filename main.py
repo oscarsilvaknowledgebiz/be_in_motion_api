@@ -30,6 +30,7 @@ app.include_router(routers.user_special_condition_router.router, prefix="/user-s
 app.include_router(routers.user_physiotherapeut_router.router, prefix="/user-physiotherapeut", tags=["user_physiotherapeut"])
 
 app.include_router(routers.medical_prescription_router.router, prefix="/medical-prescription", tags=["medicalPrescription"])
+app.include_router(routers.physiotherapeut_info_router.router, prefix="/physiotherapeut-info", tags=["physiotherapeut-info"])
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=2828)
