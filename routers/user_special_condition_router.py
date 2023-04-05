@@ -9,7 +9,7 @@ router = APIRouter()
             summary="Return data of user special condition by id_user",
             description="Return data of user special condition by id_user",
             response_description="Returns special condition data from user",
-            response_model=schemes.user_schemes.UserGetResponse,
+            response_model=schemes.user_special_conditions_schemes.UserSpecialConditionGetResponse,
             operation_id="GetDataUserByIdUser"
             )
 async def service(id_user: str):
