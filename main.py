@@ -27,6 +27,8 @@ app.add_middleware(
 app.include_router(routers.user_router.router, prefix="/user", tags=["user"])
 app.include_router(routers.user_constitution_router.router, prefix="/user-constitution", tags=["user_constitution"])
 app.include_router(routers.user_special_condition_router.router, prefix="/user-special-condition", tags=["user_special_conditions"])
+app.include_router(routers.user_physiotherapeut_router.router, prefix="/user-physiotherapeut", tags=["user_physiotherapeut"])
+
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=2828)
