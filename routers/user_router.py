@@ -30,3 +30,14 @@ async def service(id_user: str):
         return {"msg": "success", "data":{}}
     else:
         return {"msg": "error", "data": {}}
+
+
+@router.put("by-id/{id_user}",
+            summary="Updates user data by id_user",
+            description="Updates user data by id_user",
+            response_description="Updates user",
+            response_model=schemes.user_schemes.UserUpdateResponse,
+            operation_id="UpdateUserDataByIdUser"
+            )
+async def update_user(user: schemes.user_schemes.UserPut):
+    return {"msg": "success", "data": {}}
