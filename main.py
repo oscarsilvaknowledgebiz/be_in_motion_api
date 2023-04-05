@@ -25,6 +25,7 @@ app.add_middleware(
 
 
 app.include_router(routers.user_router.router, prefix="/user", tags=["user"])
+app.include_router(routers.medical_prescription_router.router, prefix="/medical-prescription", tags=["medicalPrescription"])
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=2828)
