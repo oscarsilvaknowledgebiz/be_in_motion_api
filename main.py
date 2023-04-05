@@ -25,7 +25,7 @@ app.add_middleware(
 
 
 app.include_router(routers.user_router.router, prefix="/user", tags=["user"])
-app.include_router(routers.user_physiotherapeut_router.router, prefix="/user_physiotherapeut", tags=["user_physiotherapeut"])
+app.include_router(routers.user_physiotherapeut_router.router, prefix="/user-physiotherapeut", tags=["user_physiotherapeut"])
 
 
 if __name__ == "__main__":
