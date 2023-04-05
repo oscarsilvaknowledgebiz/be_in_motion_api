@@ -20,6 +20,14 @@ class UserUpdateResponse(BaseModel):
     data: object = {}
 
 
+class UserCreateResponse(BaseModel):
+    """
+    User create response
+    """
+    msg: str
+    data: object = {}
+
+
 class UserPost(BaseModel):
     """
     User Post
