@@ -1,1 +1,2 @@
 from core.schemes import user_schemes
+from core.schemes import user_special_conditions_schemes
