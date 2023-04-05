@@ -34,8 +34,8 @@ class UserPost(BaseModel):
     phone: Optional[str] = Field(default=null, max_length=11, alias="phone")
     birth_date: Optional[str] = Field(default=null, alias="birthDate", max_length=10)
     is_active: bool = Field(default=True, alias="isActive")
-    is_admin: bool = Field(default=False, alias="isAdmin")
     is_physiotherapeut: bool = Field(default=False, alias="isPhysiotherapeut")
+    is_admin: bool = Field(default=False, alias="isAdmin")
     is_verified: bool = Field(default=False, alias="isVerified")
 
 
@@ -50,6 +50,6 @@ class UserPut(BaseModel):
     phone: Optional[str] = Field(default=null, max_length=11, alias="phone")
     birth_date: Optional[str] = Field(default=null, alias="birthDate", max_length=10)
     is_active: bool = Field(default=True, alias="isActive")
-    is_admin: bool = Field(default=False, alias="isAdmin")
     is_physiotherapeut: bool = Field(default=False, alias="isPhysiotherapeut")
+    is_admin: bool = Field(default=False, alias="isAdmin")
     is_verified: bool = Field(default=False, alias="isVerified")
