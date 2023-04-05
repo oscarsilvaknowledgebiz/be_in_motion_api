@@ -27,6 +27,17 @@ async def service(user: str):
 async def service(id_user: str):
     validate = internal.validate_uuid.is_uuid_valid(id_user)
     if validate is True:
-        return {"msg": "success", "data":{}}
+        return {"msg": "success", "data": {}}
     else:
         return {"msg": "error", "data": {}}
+
+
+@router.delete("/by-id/{id_user}",
+               summary="Delete data from user by id_user",
+               description="Delete data from user by id_user",
+               response_description="Deletes data",
+               response_model=schemes.user_schemes.UserDeleteResponse,
+               operation_id="DeleteUserDataByIdUser"
+               )
+async def delete_user(user_id: str):
+    return {"msg": "success", "data": {}}

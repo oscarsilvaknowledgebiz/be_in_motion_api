@@ -9,3 +9,10 @@ class UserGetResponse(BaseModel):
     msg: str
     data: object = {}
 
+
+class UserDeleteResponse(BaseModel):
+    """
+    Delete user scheme
+    """
+    msg: str
+    data: str
