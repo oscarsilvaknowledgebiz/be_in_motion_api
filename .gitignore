@@ -125,3 +125,4 @@ routers/__pycache__
 core/schemes/__pycache__
 internal/__pycache__
 .idea
+/coverage-reports/
