@@ -3,3 +3,4 @@ from core.schemes import physiotherapeut_info_schemes
 from core.schemes import user_constitution_schemes
 from core.schemes import user_physiotherapeut_schemes
 from core.schemes import medical_prescription_schemes
+from core.schemes import user_special_conditions_schemes

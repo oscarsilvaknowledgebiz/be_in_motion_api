@@ -28,7 +28,6 @@ app.include_router(routers.user_router.router, prefix="/user", tags=["user"])
 app.include_router(routers.user_constitution_router.router, prefix="/user-constitution", tags=["user_constitution"])
 app.include_router(routers.user_special_condition_router.router, prefix="/user-special-condition", tags=["user_special_conditions"])
 app.include_router(routers.user_physiotherapeut_router.router, prefix="/user-physiotherapeut", tags=["user_physiotherapeut"])
-
 app.include_router(routers.medical_prescription_router.router, prefix="/medical-prescription", tags=["medicalPrescription"])
 app.include_router(routers.physiotherapeut_info_router.router, prefix="/physiotherapeut-info", tags=["physiotherapeut-info"])
 
