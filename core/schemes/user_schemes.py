@@ -3,7 +3,6 @@ from pydantic import BaseModel, Field
 from pyasn1.compat.octets import null
 
 
-
 class UserGetResponse(BaseModel):
     """
     User get response scheme
@@ -61,3 +60,30 @@ class UserPut(BaseModel):
     is_physiotherapeut: bool = Field(default=False, alias="isPhysiotherapeut")
     is_admin: bool = Field(default=False, alias="isAdmin")
     is_verified: bool = Field(default=False, alias="isVerified")
+
+
+class UserInfoPut(BaseModel):
+    """
+    User Put
+    """
+    id_user: str
+    name: str
+    picture: Optional[str] = Field(default=null, alias="picture")
+    phone: Optional[str] = Field(default=null, max_length=11, alias="phone")
+    birth_date: Optional[str] = Field(default=null, alias="birthDate", max_length=10)
+
+
+class UserInfoPutResponse(BaseModel):
+    """
+    User Put
+    """
+    msg: str
+    data: object
+
+
+class UserPostResponse(BaseModel):
+    """
+       User Post
+       """
+    msg: str
+    data: object
