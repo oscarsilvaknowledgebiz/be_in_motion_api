@@ -38,6 +38,7 @@ async def update_user(response: Response, user: schemes.user_schemes.UserInfoPut
         return {"msg": "error", "data": {}}
 
 
+
 @router.post("",
              summary="Creates a new user by id_user",
              description="Creates a new user by id_user",
