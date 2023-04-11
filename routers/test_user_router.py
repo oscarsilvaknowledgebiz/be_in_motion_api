@@ -44,9 +44,6 @@ def test_put_user_router_success():
         "id_user": test_id,
         "name": "testname"
     })
-    headers = {
-        'Content-Type': 'application/json'
-    }
     print(payload)
     response = client.put(path, data=payload)
     response_json = response.json()
@@ -63,9 +60,6 @@ def test_put_user_router_error():
         "id_user": test_id,
         "name": "testname"
     })
-    headers = {
-        'Content-Type': 'application/json'
-    }
     print(payload)
     response = client.put(path, data=payload)
     response_json = response.json()
@@ -94,9 +88,6 @@ def test_post_user_router_success():
         "is_admin": False,
         "is_verified": False
     })
-    headers = {
-        'Content-Type': 'application/json'
-    }
     print(payload)
     response = client.post(path, data=payload)
     response_json = response.json()
