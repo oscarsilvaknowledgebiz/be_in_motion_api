@@ -3,3 +3,4 @@ from routers import physiotherapeut_info_router
 from routers import medical_prescription_router
 from routers import user_constitution_router
 from routers import user_physiotherapeut_router
+from routers import user_special_condition_router
