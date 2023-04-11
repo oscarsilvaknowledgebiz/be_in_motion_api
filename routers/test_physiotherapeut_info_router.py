@@ -9,6 +9,7 @@ client = TestClient(app)
 
 prefix = "physiotherapeut-info"
 
+
 def test_physiotherapeut_info_success():
     end_point = "by-id"
     test_id = "ff567cf3-f336-471b-95db-1d1ab9eccfe6"
@@ -18,6 +19,7 @@ def test_physiotherapeut_info_success():
     assert response.status_code == 200
     assert response_json["msg"] == "success"
     assert type(response_json["data"]) == dict
+
 
 def test_physiotherapeut_info_error():
     end_point = "by-id"
